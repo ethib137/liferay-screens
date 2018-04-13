@@ -54,7 +54,7 @@ public class IssuesActivity extends CardActivity
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.issues);
+		setContentView(R.layout.my_bank);
 
 		backgroundCard = findViewById(R.id.background);
 
@@ -63,12 +63,10 @@ public class IssuesActivity extends CardActivity
 		card1ToBackground = (ImageView) findViewById(R.id.card1_to_background);
 		card1ToBackground.setOnClickListener(this);
 
-		reportIssueTitle = (TextView) findViewById(R.id.report_issue_title);
+		reportIssueTitle = (TextView) findViewById(R.id.sign_up_for_wealth_management);
 
 		ddlFormScreenlet = (DDLFormScreenlet) findViewById(R.id.ddlform);
 		ddlFormScreenlet.setListener(this);
-		ddlListScreenlet = (DDLListScreenlet) findViewById(R.id.ddllist);
-		ddlListScreenlet.setListener(this);
 
 		sendButton = (Button) findViewById(R.id.liferay_form_submit);
 
@@ -97,7 +95,7 @@ public class IssuesActivity extends CardActivity
 		switch (v.getId()) {
 			case R.id.card1_to_front_view:
 				goLeftCard1();
-				reportIssueTitle.setText(getString(R.string.report_issue));
+				reportIssueTitle.setText(getString(R.string.sign_up_for_wealth_management));
 				break;
 			case R.id.card1_to_background:
 			case R.id.card1_to_background_menu:
@@ -249,8 +247,8 @@ public class IssuesActivity extends CardActivity
 
 	private void clearDDLEntrySelected() {
 		record = null;
-		reportIssueTitle.setText(getString(R.string.report_issue));
-		sendButton.setText(getString(R.string.send).toUpperCase());
+		reportIssueTitle.setText(getString(R.string.sign_up_for_wealth_management));
+		sendButton.setText(getString(R.string.submit_form).toUpperCase());
 		ddlFormScreenlet.setRecordId(0);
 	}
 
@@ -267,8 +265,6 @@ public class IssuesActivity extends CardActivity
 
 	private void goRightCard1(Record element) {
 		TextView issueTitle = (TextView) findViewById(R.id.issue_title);
-		Object serverValue = element.getServerValue(getString(R.string.liferay_recordset_fields));
-		issueTitle.setText(String.valueOf(serverValue));
 
 		String date = DateFormat.getDateTimeInstance().format(element.getServerAttribute("createDate"));
 		((TextView) findViewById(R.id.createdAt)).setText(getString(R.string.created, date));

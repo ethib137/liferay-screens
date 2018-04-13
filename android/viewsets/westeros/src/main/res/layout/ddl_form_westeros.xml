@@ -31,7 +31,7 @@
 		<Button
 			android:id="@+id/liferay_form_submit"
 			android:layout_alignParentBottom="true"
-			android:text="@string/send"
+			android:text="@string/submit_form"
 			style="@style/westeros_dark_button"
 			/>
 

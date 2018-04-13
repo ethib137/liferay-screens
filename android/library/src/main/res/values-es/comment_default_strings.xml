@@ -4,6 +4,6 @@
 	<string name="edit_comment">Editar comentario</string>
 	<string name="edited">- Editado</string>
 	<string name="empty_comments">No hay ningún comentario todavía</string>
-	<string name="send">Enviar</string>
+	<string name="submit_form">Enviar</string>
 	<string name="type_your_comment">Escribe tu comentario</string>
 </resources>

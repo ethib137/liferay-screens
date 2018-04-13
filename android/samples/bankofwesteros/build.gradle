@@ -25,13 +25,11 @@ android {
 }
 
 dependencies {
-	implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-	implementation project(':liferay-screens')
+	implementation fileTree(include: ['*.jar'], dir: 'libs')
 	implementation project(':liferay-westeros-viewset')
-
 	implementation libraries.appCompat
 	implementation libraries.recyclerView
 	implementation libraries.rxpermissions
 	implementation libraries.rxbinding
+	implementation 'com.liferay.mobile:liferay-screens:2.1.1'
 }

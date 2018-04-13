@@ -66,8 +66,8 @@
 				/>
 
 			<TextView
-				android:id="@+id/title_issues"
-				android:text="@string/my_issues"
+				android:id="@+id/title_bank"
+				android:text="@string/my_bank"
 				style="@style/westeros_card_title"
 				/>
 
@@ -81,23 +81,34 @@
 				/>
 
 			<View
-				android:id="@+id/divider_issues"
+				android:id="@+id/divider_bank"
 				android:layout_width="match_parent"
 				android:layout_height="1dp"
-				android:layout_below="@id/title_issues"
+				android:layout_below="@id/title_bank"
 				android:background="@color/background_gray_westeros"
 				/>
 
-			<com.liferay.mobile.screens.ddl.list.DDLListScreenlet
-				android:id="@+id/ddllist"
+			<RelativeLayout
+				android:id="@+id/card1_subview1"
 				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:layout_below="@id/divider_issues"
-				liferay:labelFields="@string/liferay_recordset_fields"
-				liferay:layoutId="@layout/ddl_list_westeros_with_drawable"
-				liferay:recordSetId="@string/liferay_recordset_id"
-				/>
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:layout_below="@id/divider_bank"
+				>
+				<com.liferay.mobile.screens.webcontent.display.WebContentDisplayScreenlet
+					android:id="@+id/carousel"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					liferay:articleId="49670"
+					/>
 
+				<com.liferay.mobile.screens.webcontent.display.WebContentDisplayScreenlet
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/carousel"
+					liferay:articleId="32804"
+					/>
+			</RelativeLayout>
 		</RelativeLayout>
 
 
@@ -173,8 +184,8 @@
 		>
 
 		<TextView
-			android:id="@+id/report_issue_title"
-			android:text="@string/report_issue"
+			android:id="@+id/sign_up_for_wealth_management"
+			android:text="@string/sign_up_for_wealth_management"
 			android:textColor="@android:color/white"
 			style="@style/westeros_card_title"
 			/>
@@ -193,14 +204,10 @@
 			android:id="@+id/ddlform"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			android:layout_below="@id/report_issue_title"
-			liferay:cachePolicy="REMOTE_FIRST"
-			liferay:layoutId="@layout/ddl_form_westeros"
+			android:layout_below="@id/sign_up_for_wealth_management"
+			liferay:layoutId="@layout/ddl_form_default"
 			liferay:recordSetId="@string/liferay_recordset_id"
-			liferay:selectFieldLayoutId="@layout/ddlfield_select_westeros"
 			liferay:structureId="@string/liferay_structure_id"
-			liferay:textAreaFieldLayoutId="@layout/ddlfield_text_area_westeros"
-			liferay:textFieldLayoutId="@layout/ddlfield_text_westeros"
 			/>
 	</RelativeLayout>
 

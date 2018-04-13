@@ -2,7 +2,7 @@
 	<string name="save">Save</string>
 	<string name="view">View</string>
 	<string name="edit">Edit</string>
-	<string name="send">Send</string>
+	<string name="submit_form">Send</string>
 	<string name="severity">Severity</string>
 	<string name="reset_password_text">We will send you a link to reset your password.\r\n\r\nThe link will be valid 24 hours</string>
 	<string name="send_password">Send Password</string>
