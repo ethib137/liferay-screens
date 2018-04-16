@@ -27,7 +27,7 @@
 \r\nUpon receipt of a counter notification, please be advised that Liferay will forward a copy of it to the party who submitted the original infringement notice. Your contact information is included on this counter notification. By submitting a counter notification, you consent to having your contact information revealed in this way.  Liferay will not forward the counter notification to any party other than the original claimant.
 \r\n
 \r\nThe original claimant may elect to file a lawsuit against you for copyright infringement.  If Liferay does not receive notice that a lawsuit has been filed within ten (10) business days after notice of your counter notification, Liferay will restore the removed material. However, until such time, any removed material will remain removed.]]></string>
-	<string name="sign_up_for_wealth_management">Sign Up For Wealth Management</string>
+	<string name="form_title">Sign Up For Graduate Admissions Counseling</string>
 	<string name="account_settings">Account Settings</string>
 	<string name="severity">Severity</string>
 	<string name="severity_detail">Severity: %s</string>
@@ -36,7 +36,7 @@
 	<string name="send_password">Send Password</string>
 	<string name="send_a_message">Send a message</string>
 	<string name="sign_out">Sign Out</string>
-	<string name="my_bank">My Bank</string>
+	<string name="my_bank">KFUPM</string>
 	<string name="issue_detail">Issue Detail</string>
 	<string name="sign_in">Sign In</string>
 	<string name="forgot_password_title">Forgot Password</string>

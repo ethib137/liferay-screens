@@ -12,10 +12,10 @@
 
 	<color name="green_westeros">#88B275</color>
 
-	<color name="colorPrimary">#E44740</color>
-	<color name="colorPrimaryDark">#BE211A</color>
-	<color name="colorAccent">#FBB351</color>
-	<color name="textColorPrimary">#303030</color>
+	<color name="colorPrimary">#1d834b</color>
+	<color name="colorPrimaryDark">#196b3e</color>
+	<color name="colorAccent">#d0b756</color>
+	<color name="textColorPrimary">#333333</color>
 	<color name="textColorSecondary">#878787</color>
 
 </resources>

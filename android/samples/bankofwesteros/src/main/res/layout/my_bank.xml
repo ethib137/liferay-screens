@@ -99,14 +99,7 @@
 					android:id="@+id/carousel"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					liferay:articleId="49670"
-					/>
-
-				<com.liferay.mobile.screens.webcontent.display.WebContentDisplayScreenlet
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:layout_below="@id/carousel"
-					liferay:articleId="32804"
+					liferay:articleId="88881"
 					/>
 			</RelativeLayout>
 		</RelativeLayout>
@@ -185,7 +178,7 @@
 
 		<TextView
 			android:id="@+id/sign_up_for_wealth_management"
-			android:text="@string/sign_up_for_wealth_management"
+			android:text="@string/form_title"
 			android:textColor="@android:color/white"
 			style="@style/westeros_card_title"
 			/>

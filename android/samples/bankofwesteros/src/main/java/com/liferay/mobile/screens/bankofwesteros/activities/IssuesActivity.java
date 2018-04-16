@@ -95,7 +95,7 @@ public class IssuesActivity extends CardActivity
 		switch (v.getId()) {
 			case R.id.card1_to_front_view:
 				goLeftCard1();
-				reportIssueTitle.setText(getString(R.string.sign_up_for_wealth_management));
+				reportIssueTitle.setText(getString(R.string.form_title));
 				break;
 			case R.id.card1_to_background:
 			case R.id.card1_to_background_menu:
@@ -247,7 +247,7 @@ public class IssuesActivity extends CardActivity
 
 	private void clearDDLEntrySelected() {
 		record = null;
-		reportIssueTitle.setText(getString(R.string.sign_up_for_wealth_management));
+		reportIssueTitle.setText(getString(R.string.form_title));
 		sendButton.setText(getString(R.string.submit_form).toUpperCase());
 		ddlFormScreenlet.setRecordId(0);
 	}
