@@ -18,14 +18,6 @@ private var lr_lastURLKey: Void?
 
 extension UIImageView {
 
-	public var lr_webURL: URL? {
-		return objc_getAssociatedObject(self, &lr_lastURLKey) as? URL
-	}
-
-	fileprivate func lr_setWebURL(_ URL: Foundation.URL) {
-		objc_setAssociatedObject(self, &lr_lastURLKey, URL, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-	}
-
 	public func lr_setImageWithURL(
 			_ URL: Foundation.URL,
 			placeholderImage: Image? = nil,

@@ -15,26 +15,10 @@ import Foundation
 
 public extension Dictionary {
 
-	public func copyAndAdd(_ key: Key, value: Value) -> [Key: Value] {
-		var result = self
-
-		result.updateValue(value, forKey: key)
-
-		return result
-	}
-
 	public func copyAndRemove(_ key: Key) -> [Key: Value] {
 		var result = self
 
 		result.removeValue(forKey: key)
-
-		return result
-	}
-
-	public func copyAndRemove(_ keys: [Key]) -> [Key: Value] {
-		var result = self
-
-		result.removeValueForKeys(keys)
 
 		return result
 	}
@@ -52,11 +36,4 @@ public extension Dictionary {
 			self.updateValue(v, forKey: k)
 		}
 	}
-
-	public mutating func removeValueForKeys(_ keys: [Key]) {
-		for (k, _) in self {
-			self.removeValue(forKey: k)
-		}
-	}
-
 }

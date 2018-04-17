@@ -58,7 +58,7 @@ public extension NSError {
 				domain: "LiferayScreens",
 				code: cause.rawValue,
 				userInfo: userInfo)
-}
+	}
 
 	public class func errorWithCause(
 			_ cause: ScreensErrorCause,
